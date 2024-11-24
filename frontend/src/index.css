@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 12px; /* Adjust this value to your preference */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem; /* 1rem = 14px, based on the root font size */
+}
+/* Custom scrollbar for webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Thinner scrollbar */
+  height: 8px; /* For horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Green color for the thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+  border: 1px solid #f1f1f1; /* Border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa; /* Darker green when hovered */
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0; /* Light gray background for the track */
+  border-radius: 4px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #ddd; /* Darker gray when hovered */
+}
