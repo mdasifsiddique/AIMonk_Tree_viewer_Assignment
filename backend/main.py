@@ -19,7 +19,6 @@ load_dotenv()
 COLLECTION_NAME = "tree_nodes" 
 
 MONGODB_URI = os.getenv("MONGODB_URI")
-print("MongoDB URI loaded successfully:", MONGODB_URI)
 DEBUG = os.environ.get("DEBUG", "").strip().lower() in {"1", "true", "on", "yes"} 
 
 @asynccontextmanager

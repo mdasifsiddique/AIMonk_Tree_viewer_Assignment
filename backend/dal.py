@@ -69,7 +69,6 @@ class TreeDAL:
                     # Execute bulk write operation
                     result = await self._nodes_collection.bulk_write(update_operations, ordered=False)
 
-                    print(f"Bulk update result: {result}")
                     return result.modified_count  # Returns the number of documents modifie
 
             except Exception as e:
